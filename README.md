@@ -39,13 +39,13 @@ To save the images use the option '--save_visualization'. Images will be saved i
 * The command below gives an exemple to evaluate and visualize detection with the Resnet50 teacher model on the TV_soccer evauation dataset. 
 ```
 cd script/detection
-python eval_fasterRCNN.py --backbone resnet50 --test_dataset_name TV_soccer --save_visualization --checkpoint ../../checkpoints_runs/player_det_resnet50_teacher.pth
+python3 eval_fasterRCNN.py --backbone resnet50 --test_dataset_name TV_soccer --save_visualization --checkpoint ../../checkpoints_runs/player_det_resnet50_teacher.pth
 
 ```
 * The command below gives an exemple to evaluate and visualize detection with the Resnet18 student model on the SPD evauation dataset. 
 ```
 cd script/detection
-python eval_fasterRCNN.py --backbone resnet18 --test_dataset_name SPD --save_visualization --checkpoint ../../checkpoints_runs/player_det_resnet18_student.pth
+python3 eval_fasterRCNN.py --backbone resnet18 --test_dataset_name SPD --save_visualization --checkpoint ../../checkpoints_runs/player_det_resnet18_student.pth
 ```
 * In order down-scale (and pad) images by a certain factor to work with smaller player, use the command '--scale_transform_test factor'
 

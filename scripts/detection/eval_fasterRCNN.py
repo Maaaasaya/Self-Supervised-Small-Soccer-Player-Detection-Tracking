@@ -286,6 +286,8 @@ if __name__ == '__main__':
     test_image_files = os.path.join(path, 'test_frame_list.txt')
     test_annotation_files = os.path.join(path, 'test_annotation_list.txt')
 
+    print('dataset-loading...')
+
     dataset_test = SoccerDataset(
         test_image_files=test_image_files,
         test_annotation_files=test_annotation_files,
